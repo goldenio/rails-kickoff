@@ -1,0 +1,33 @@
+en:
+  <%= plural_table_name %>:
+    edit:
+      title: 'Editing <%= singular_table_name %>'
+    index:
+      title: 'Listing <%= plural_table_name %>'
+    new:
+      title: 'New <%= singular_table_name %>'
+    show:
+      title: '<%= singular_table_name.capitalize %> - %{name}'
+
+  activerecord:
+    models:
+      <%= singular_table_name %>: '<%= singular_table_name.capitalize %>'
+    attributes:
+      <%= singular_table_name %>:
+        <%- attributes.each do |attribute| -%>
+        <%= attribute.name %>: '<%= attribute.name.capitalize %>'
+        <%- end -%>
+
+  simple_form:
+    labels:
+      <%= singular_table_name %>:
+    hints:
+      <%= singular_table_name %>:
+    placeholders:
+      <%= singular_table_name %>:
+
+  helpers:
+    submit:
+      <%= singular_table_name %>:
+        create: 'Create %{model}'
+        update: 'Update %{model}'

@@ -1,0 +1,46 @@
+en:
+  devise:
+    confirmations:
+      new:
+        title: 'Resend confirmation instructions'
+        submit: 'Resend confirmation instructions'
+    # mailer:
+    passwords:
+      edit:
+        title: 'Change your password'
+        password: 'New password'
+        password_confirmation: 'Confirm your new password'
+        submit: 'Change my password'
+      new:
+        title: 'Forgot your password?'
+        submit: 'Send me reset password instructions'
+    registrations:
+      edit:
+        title: 'Edit %{name}'
+        waiting_for: 'Currently waiting confirmation for: %{email}'
+        password_hint: "leave it blank if you don't want to change it"
+        current_password_hint: 'we need your current password to confirm your changes'
+        submit: 'Update'
+        cancel_my_account: 'Cancel my account'
+        unhappy: 'Unhappy?'
+        are_you_sure: 'Are you sure?'
+        back: 'Back'
+      new:
+        title: 'Sign up'
+        submit: 'Sign up'
+    sessions:
+      new:
+        title: 'Sign in'
+        submit: 'Sign in'
+    shared:
+      links:
+        new_session_path: 'Sign in'
+        new_registration_path: 'Sign up'
+        new_password_path: 'Forgot your password?'
+        new_confirmation_path: "Didn't receive confirmation instructions?"
+        new_unlock_path: "Didn't receive unlock instructions?"
+        omniauth_authorize_path: 'Sign in with %{provider}'
+    unlocks:
+      new:
+        title: 'Resend unlock instructions'
+        submit: 'Resend unlock instructions'

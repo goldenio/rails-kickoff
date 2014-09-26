@@ -1,0 +1,23 @@
+<article>
+  <header>
+    <h1><%%= t('.title', name: @<%= singular_table_name %>.name) %></h1>
+  </header>
+
+  <div class="tabbable">
+    <%%= bootstrap_ul_tag class: 'nav nav-tabs' do |li|
+      if can? :index, <%= class_name %>
+        li << [link_to(t('helpers.index'), <%= index_helper %>_path), { class: 'pull-right' }]
+      end
+      if can? :edit, @<%= singular_table_name %>
+        li << [link_to(t('helpers.edit'), [:edit, @<%= singular_table_name %>]), { class: 'pull-right' }]
+      end
+    end %>
+
+    <div>
+      <%%= render '<%= singular_table_name %>', <%= singular_table_name %>: @<%= singular_table_name %> %>
+    </div>
+  </div>
+
+  <footer>
+  </footer>
+</article>

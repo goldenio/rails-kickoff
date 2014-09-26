@@ -1,0 +1,33 @@
+zh-TW:
+  <%= plural_table_name %>:
+    edit:
+      title: '編輯 <%= singular_table_name %>'
+    index:
+      title: '<%= plural_table_name.capitalize %> 列表'
+    new:
+      title: '新增 <%= singular_table_name %>'
+    show:
+      title: '<%= singular_table_name.capitalize %> - %{name}'
+
+  activerecord:
+    models:
+      <%= singular_table_name %>: '<%= singular_table_name.capitalize %>'
+    attributes:
+      <%= singular_table_name %>:
+        <%- attributes.each do |attribute| -%>
+        <%= attribute.name %>: '<%= attribute.name.capitalize %>'
+        <%- end -%>
+
+  simple_form:
+    labels:
+      <%= singular_table_name %>:
+    hints:
+      <%= singular_table_name %>:
+    placeholders:
+      <%= singular_table_name %>:
+
+  helpers:
+    submit:
+      <%= singular_table_name %>:
+        create: '建立%{model}'
+        update: '確認'

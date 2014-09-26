@@ -1,0 +1,46 @@
+zh-TW:
+  devise:
+    confirmations:
+      new:
+        title: '重新寄送帳號確認指引通知'
+        submit: '重新寄送帳號確認指引通知'
+    # mailer:
+    passwords:
+      edit:
+        title: '更改您的密碼'
+        password: '新密碼'
+        password_confirmation: '確認您的新密碼'
+        submit: '更改您的密碼'
+      new:
+        title: '忘記您的密碼？'
+        submit: '將重設密碼指引通知寄給我'
+    registrations:
+      edit:
+        title: '編輯%{name}'
+        waiting_for: '目前正在等待確認信件回覆：%{email}'
+        password_hint: '留空，如果您不想更改它'
+        current_password_hint: '我們需要您目前的密碼來確認您的更動'
+        submit: '更新'
+        cancel_my_account: '取消我的帳號'
+        unhappy: '不滿意？'
+        are_you_sure: '您確認嗎？'
+        back: '回上一頁'
+      new:
+        title: '註冊帳號'
+        submit: '註冊帳號'
+    sessions:
+      new:
+        title: '本站登入'
+        submit: '登入帳號'
+    shared:
+      links:
+        new_session_path: '登入'
+        new_registration_path: '註冊帳號'
+        new_password_path: '忘記您的密碼？'
+        new_confirmation_path: '尚未收到帳號確認指引通知？'
+        new_unlock_path: '尚未收到解除帳號鎖定指引通知？'
+        omniauth_authorize_path: '改用 %{provider} 登入'
+    unlocks:
+      new:
+        title: '重新寄送解除帳號鎖定指引通知'
+        submit: '重新寄送解除帳號鎖定指引通知'

@@ -1,0 +1,36 @@
+en:
+  roles:
+    edit:
+      title: 'Editing role'
+    index:
+      title: 'Listing roles'
+    new:
+      title: 'New role'
+    show:
+      title: 'Role - %{name}'
+    names:
+      administrator: 'Administrator'
+      manager: 'Manager'
+
+  activerecord:
+    models:
+      role: 'Role'
+    attributes:
+      role:
+        name: 'Name'
+        description: 'Description'
+        enabled: 'Enabled'
+
+  simple_form:
+    labels:
+      role:
+    hints:
+      role:
+    placeholders:
+      role:
+
+  helpers:
+    submit:
+      role:
+        create: 'Create %{model}'
+        update: 'Update %{model}'

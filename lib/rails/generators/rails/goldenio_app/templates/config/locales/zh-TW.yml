@@ -1,0 +1,9 @@
+zh-TW:
+  site:
+    title: '<%= camelized %>'
+  application:
+    header:
+      nav_toggle: '切換導覽列'
+      site_title: '<%= camelized %>'
+    main_navigation:
+      title: '網站導覽'

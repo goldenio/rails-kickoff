@@ -1,0 +1,3 @@
+zh-TW:
+  unauthorized:
+    default: '您未被授權進入此頁面。'

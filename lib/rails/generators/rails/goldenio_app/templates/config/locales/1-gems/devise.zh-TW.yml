@@ -1,0 +1,57 @@
+zh-TW:
+  devise:
+    confirmations:
+      confirmed: '您的帳號已經成功確認。'
+      send_instructions: '您將會在幾分鐘內收到一封電子郵件，指引如何確認您的帳號。'
+      send_paranoid_instructions: '如果您的電子郵件存在我們的資料庫，您將會在幾分鐘內收到一封電子郵件，指引如何確認您的帳號。'
+    failure:
+      already_authenticated: '您已經登入。'
+      inactive: '您的帳號尚未被啟用。'
+      invalid: '錯誤的電子郵件或密碼。'
+      locked: '您的帳號已被鎖定。'
+      last_attempt: "在您帳號被鎖定前，您還有最後一次嘗試機會。"
+      not_found_in_database: '錯誤的電子郵件或密碼。'
+      timeout: '您的登入認證過期，請重新登入才能繼續。'
+      unauthenticated: '您需要先註冊或登入後才能繼續。'
+      unconfirmed: '您必須確認您的帳號後才能繼續。'
+    mailer:
+      confirmation_instructions:
+        subject: '帳號確認指引'
+      reset_password_instructions:
+        subject: '重設密碼指引'
+      unlock_instructions:
+        subject: '解除帳號鎖定指引'
+    omniauth_callbacks:
+      failure: '無法從%{kind}獲得授權。原因是%{reason}。'
+      success: '成功從%{kind}獲得授權'
+    passwords:
+      no_token: '您無法訪問此頁面。您必須透過密碼重設郵件所提供的網址來訪問此頁面，若您正是以此方式操作，請確認您使用的是郵件所提供的完整網址。'
+      send_instructions: '您將會在幾分鐘內收到一封電子郵件，指引如何重設您的密碼。'
+      send_paranoid_instructions: '如果您的電子郵件存在我們的資料庫，您將收到一封含有密碼回復連結的電子郵件。'
+      updated: '您的密碼已成功變更。您現在已經登入。'
+      updated_not_active: '您的密碼已成功變更。'
+    registrations:
+      destroyed: '再見！您的帳號已經成功註銷。我們希望很快再見到您。'
+      signed_up: '歡迎！您已經註冊成功。'
+      signed_up_but_inactive: '您已經註冊成功。然而，我們無法立即為您登入，因為您的帳戶尚未啟用。'
+      signed_up_but_locked: '您已經註冊成功。然而，我們無法立即為您登入，因為您的帳戶已被鎖定。'
+      signed_up_but_unconfirmed: '一封含有帳號確認連結的電子郵件已經寄到您的信箱，請點擊連結以便啟用您的帳號。'
+      update_needs_confirmation: '您已經成功更新您的帳號，但我們需要確認您新的電子郵件地址。請檢查您的電子郵件，點擊確認連結來完成您新的電子郵件地址更新動作。'
+      updated: '您已經成功更新您的帳號。'
+    sessions:
+      signed_in: '登入成功。'
+      signed_out: '登出成功。'
+    unlocks:
+      send_instructions: '您將會在幾分鐘內收到一封電子郵件，指引如何解除您的帳號鎖定。'
+      send_paranoid_instructions: '如果您的帳號存在，您將會在幾分鐘內收到一封電子郵件，指引如何解除您的帳號鎖定。'
+      unlocked: '您的帳號已經成功解除鎖定。請登入以便繼續。'
+  errors:
+    messages:
+      already_confirmed: '已經被確認，請登入'
+      confirmation_period_expired: '需要在 %{period} 內被確認，請重新申請一次。'
+      expired: '已經過期，請重新請求一個新的'
+      not_found: '找不到'
+      not_locked: '未被鎖定'
+      not_saved:
+        one: '1個錯誤限制此%{resource}被儲存:'
+        other: '%{count}個錯誤限制此%{resource}被儲存:'

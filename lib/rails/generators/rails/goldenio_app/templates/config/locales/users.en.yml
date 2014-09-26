@@ -1,0 +1,45 @@
+en:
+  activerecord:
+    models:
+      user: 'User'
+    attributes:
+      user:
+        email: 'Email'
+        encrypted_password: 'Encrypted password'
+        reset_password_token: 'Reset password token'
+        reset_password_sent_at: 'Reset password sent at'
+        remember_created_at: 'Remember created at'
+        sign_in_count: 'Sign in count'
+        current_sign_in_at: 'Current sign in at'
+        last_sign_in_at: 'Last sign in at'
+        current_sign_in_ip: 'Current sign in ip'
+        last_sign_in_ip: 'Last sign in ip'
+        confirmation_token: 'Confirmed token'
+        confirmed_at: 'Confirmed at'
+        confirmation_sent_at: 'Confirmation sent at'
+        unconfirmed_email: 'unconfirmed email'
+        failed_attempts: 'Failed attempts'
+        unlock_token: 'Unlock token'
+        locked_at: 'Locked at'
+        password: 'Password'
+        password_confirmation: 'Password confirmation'
+        current_password: 'Current password'
+        remember_me: 'Remember me'
+    errors:
+      models:
+        user:
+          attributes:
+
+  simple_form:
+    labels:
+      user:
+    hints:
+      user:
+    placeholders:
+      user:
+
+  helpers:
+    submit:
+      user:
+        create: 'Create %{model}'
+        update: 'Update %{model}'

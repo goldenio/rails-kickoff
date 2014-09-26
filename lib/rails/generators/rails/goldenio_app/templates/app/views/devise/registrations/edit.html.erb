@@ -1,0 +1,37 @@
+<h2><%= t('.title', name: resource.class.model_name.human) %></h2>
+
+<%= simple_form_for resource,
+  as: resource_name,
+  url: registration_path(resource_name),
+  html: { method: :put } do |f| %>
+
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :email, required: true, autofocus: true %>
+
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <P><%= t('.waiting_for', email: resource.unconfirmed_email) %></P>
+    <% end %>
+
+    <%= f.input :password, autocomplete: "off", hint: t('.password_hint'), required: false %>
+    <%= f.input :password_confirmation, required: false %>
+    <%= f.input :current_password, hint: t('.current_password_hint'), required: true %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, t('.submit') %>
+  </div>
+<% end %>
+
+<h3><%= t('.cancel_my_account') %></h3>
+
+<p>
+  <%= t('.unhappy') %>
+  <%= link_to t('.cancel_my_account'),
+    registration_path(resource_name),
+    method: :delete,
+    data: { confirm: t('.are_you_sure') } %>
+</p>
+
+<%= link_to t('.back'), :back %>

@@ -1,0 +1,9 @@
+-
+  name: 'administrator'
+  description: '系統管理員'
+  enabled: true
+
+-
+  name: 'manager'
+  description: '管理員'
+  enabled: true

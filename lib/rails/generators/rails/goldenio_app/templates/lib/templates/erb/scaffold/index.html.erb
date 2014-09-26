@@ -1,0 +1,19 @@
+<article>
+  <header>
+    <h1><%%= t('.title') %></h1>
+  </header>
+
+  <div class="tabbable">
+    <%%= bootstrap_ul_tag class: 'nav nav-tabs' do |li|
+      if can? :new, <%= class_name %>
+        li << [link_to(t('helpers.new'), new_<%= singular_table_name %>_path), { class: 'pull-right' }]
+      end
+    end %>
+
+    <%%= render 'table', <%= plural_table_name %>: @<%= plural_table_name %> %>
+  <div>
+
+  <footer>
+    <%%= render 'application/bootstrap/pagination', collection: @<%= plural_table_name %> %>
+  </footer>
+</article>

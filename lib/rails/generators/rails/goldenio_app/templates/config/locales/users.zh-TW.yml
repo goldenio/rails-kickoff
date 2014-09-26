@@ -1,0 +1,45 @@
+zh-TW:
+  activerecord:
+    models:
+      user: '用戶'
+    attributes:
+      user:
+        email: '電子郵件'
+        encrypted_password: '加密過的密碼'
+        reset_password_token: '重設密碼憑證'
+        reset_password_sent_at: '重設密碼寄出時間'
+        remember_created_at: '登入記憶建立時間'
+        sign_in_count: '登入次數'
+        current_sign_in_at: '目前登入時間'
+        last_sign_in_at: '上次登入時間'
+        current_sign_in_ip: '目前登入位址'
+        last_sign_in_ip: '上次登入位址'
+        confirmation_token: '帳號確認憑證'
+        confirmed_at: '帳號確認時間'
+        confirmation_sent_at: '帳號確認通知寄送時間'
+        unconfirmed_email: '未確認的電子郵件'
+        failed_attempts: '登入失敗次數'
+        unlock_token: '解除帳號鎖定憑證'
+        locked_at: '帳號鎖定時間'
+        password: '密碼'
+        password_confirmation: '確認密碼'
+        current_password: '目前密碼'
+        remember_me: '記住我'
+    errors:
+      models:
+        user:
+          attributes:
+
+  simple_form:
+    labels:
+      user:
+    hints:
+      user:
+    placeholders:
+      user:
+
+  helpers:
+    submit:
+      user:
+        create: '建立%{model}'
+        update: '確認'

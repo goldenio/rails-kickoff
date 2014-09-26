@@ -1,0 +1,36 @@
+zh-TW:
+  roles:
+    edit:
+      title: '編輯角色'
+    index:
+      title: '角色列表'
+    new:
+      title: '新增角色'
+    show:
+      title: '角色 - %{name}'
+    names:
+      administrator: '系統管理員'
+      manager: '管理員'
+
+  activerecord:
+    models:
+      role: '角色'
+    attributes:
+      role:
+        name: '名稱'
+        description: '描述'
+        enabled: '啟用'
+
+  simple_form:
+    labels:
+      role:
+    hints:
+      role:
+    placeholders:
+      role:
+
+  helpers:
+    submit:
+      role:
+        create: '建立%{model}'
+        update: '確認'

@@ -1,0 +1,11 @@
+-
+  email: 'administrator@example.com'
+  skip_confirmation: true
+  roles:
+    - administrator
+
+-
+  email: 'manager@example.com'
+  skip_confirmation: true
+  roles:
+    - manager
