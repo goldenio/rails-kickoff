@@ -27,7 +27,7 @@ DEFAULT_LOCALE=:'zh-TW'
 Create rails application with `--skip-bundle` and `--template` options, like
 
 ```
-rails _4.1.6_ new demo_app -Td mysql --skip-bundle --template ~/.rvm/gems/ruby-2.1.3/gems/rails-kickoff-0.0.1/lib/rails/kickoff/templates/goldenio.rb
+rails _4.1.6_ new demo_app -Td mysql --skip-bundle --template ~/.rvm/gems/ruby-2.1.3/gems/rails-kickoff-0.0.1/lib/templates/goldenio.rb
 ```
 
 ## Contributing

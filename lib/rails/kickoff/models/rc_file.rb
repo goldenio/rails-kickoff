@@ -11,7 +11,7 @@ module Rails
 
       def argv
         if File.exist? @default_file
-          File.readlines(@default_file).flat_map(&:split).each do |setting|
+          File.readlines(@default_file).flat_map(&:strip).each do |setting|
             next if setting =~ /\A#/
             key, value = setting.split('=')
             @argv[key] = value

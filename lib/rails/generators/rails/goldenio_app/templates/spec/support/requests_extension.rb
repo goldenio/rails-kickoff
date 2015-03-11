@@ -15,4 +15,11 @@ end
 
 RSpec.configure do |config|
   config.include RequestsExtension, type: :request
+  config.before :suite do
+    Rails.application.routes.default_url_options = {
+      host: 'test.host',
+      port: nil,
+      protocol: 'http://'
+    }
+  end
 end

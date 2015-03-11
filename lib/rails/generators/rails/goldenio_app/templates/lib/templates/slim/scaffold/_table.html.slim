@@ -1,0 +1,22 @@
+table class='table table-striped table-bordered'
+  thead
+    tr
+      <%- attributes.each do |attribute| -%>
+      th = <%= class_name %>.human_attribute_name :<%= attribute.name %>
+      <%- end -%>
+      th = t('helpers.actions')
+
+  tbody
+    - <%= plural_table_name %>.each do |<%= singular_table_name %>|
+      tr
+        <%- attributes.each do |attribute| -%>
+        td = <%= singular_table_name %>.<%= attribute.name %>
+        <%- end -%>
+        td class='action'
+          = render_btn_group do |btn|
+            - if can? :show, <%= singular_table_name %>
+              - btn << link_to_show(<%= singular_table_name %>)
+            - if can? :edit, <%= singular_table_name %>
+              - btn << link_to_edit([:edit, <%= singular_table_name %>])
+            - if can? :destroy, <%= singular_table_name %>
+              - btn << link_to_destroy(<%= singular_table_name %>)
